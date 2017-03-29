@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script charset="utf8">
+    </script>
+    <script src="script.js" charset="utf8">
+        var app = {};
+        app.getComponente = function(nome) {
+            if (!app[nome]) {
+                app[nome] = {};
+                app[nrQuestoes++] = nome;
+            }
+            return app[nome];
+        };
+    </script>
+    <p>Jogo da Memória</p>
+    <p>Descubra os pares das imagens abaixo para finalizar o jogo</p>
+    <div id="picbox">
+        <span id="boxbuttons">
+        <span class="button">
+      <a onclick="reiniciar();">Reiniciar</a>
+    </span>
+        </span>
+        <div id="boxcard">
+        </div>
+</body>
+
+</html>
